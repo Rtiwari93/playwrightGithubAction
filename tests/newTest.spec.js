@@ -10,7 +10,8 @@ test('Valid login test', async ({ page }) => {
 
     // Click the login button and await the action
 
-    page.getByRole("button", { name: 'Login' }).click();
+    await page.getByRole('button', { name: 'Login' }).click();
+
 
 
     // Assertion to check the URL
